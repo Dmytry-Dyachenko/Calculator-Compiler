@@ -1,11 +1,29 @@
 import javaclasses.calculator.CalculationException;
 import javaclasses.calculator.impl.CalculatorImpl;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 
 import static org.junit.Assert.assertEquals;
 
 public class CalculatorTest {
     CalculatorImpl calculator = new CalculatorImpl();
+
+
+    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+
+    @Before
+    public void setUpStreams() {
+        System.setOut(new PrintStream(outContent));
+    }
+
+    @After
+    public void cleanUpStreams() {
+        System.setOut(null);
+    }
 
     @Test(expected = CalculationException.class)
     public void testStateValidation() throws CalculationException {
@@ -42,11 +60,11 @@ public class CalculatorTest {
         assertEquals(61, result, 0.001);
     }
 
- /*   @Test
+    @Test
     public void testStringWithBracketsAndFunctions() throws CalculationException {
-        final double result = calculator.calculate("sum(5,3+2*(2+3^(1+(min(1,2)+2))),1)");
-        assertEquals(175, result, 0.001);
-    }*/
+        final double result = calculator.calculate("sum(1,2*min(1,3+aver(2,4)),2)");
+        assertEquals(5, result, 0.001);
+    }
 
     @Test
     public void testExpressionWithSpaces() throws CalculationException {
@@ -55,9 +73,17 @@ public class CalculatorTest {
     }
 
     @Test
-    public void testVariables() throws CalculationException {
-        final double result = calculator.calculate("a=1;b=a+2;a+b;");
-        assertEquals(4, result, 0.001);
+    public void testVariablesAndOutMethod() throws CalculationException {
+        calculator.calculate("a=1;b=2;print(a+b);");
+        assertEquals("3.0\r\n", outContent.toString());
+
+    }
+
+    @Test
+    public void testWorkWithVariablesAndOutMethod() throws CalculationException {
+        final double result = calculator.calculate("a=1;b=2+a;a+b+1;");
+        assertEquals(5.0, result, 0.001);
+
     }
 
 

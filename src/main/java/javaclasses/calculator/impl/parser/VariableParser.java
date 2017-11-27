@@ -26,7 +26,7 @@ public class VariableParser implements ExpressionParser {
             return false;
         }
 
-        final Pattern pattern = compile("[a-zA-Z]");
+        final Pattern pattern = compile("[a-z]");
         final Matcher matcher = pattern.matcher(expression);
 
         if (matcher.find()) {
