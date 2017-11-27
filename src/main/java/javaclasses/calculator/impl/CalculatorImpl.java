@@ -13,7 +13,7 @@ import static java.util.EnumSet.of;
 import static javaclasses.calculator.impl.State.*;
 
 /**
- * Finite state machine logic implemented as calculator.
+ * Finite state machine logic implemented as calculator-compiler.
  */
 public class CalculatorImpl
         extends FiniteStateMachine<
