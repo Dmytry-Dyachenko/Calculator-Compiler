@@ -26,11 +26,11 @@ public class VariableParser implements ExpressionParser {
             return false;
         }
 
-        final Pattern pattern = compile("[a-z]");
+        final Pattern pattern = compile("[a-z]+");
         final Matcher matcher = pattern.matcher(expression);
 
         if (matcher.find()) {
-            String variableName = matcher.group();
+            String variableName = matcher.group(0);
             context.pushVariableToContext(variableName);
             reader.incrementParsePosition(variableName.length());
             return true;
