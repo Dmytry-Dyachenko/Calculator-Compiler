@@ -15,7 +15,7 @@ public class CloseBracketParser implements ExpressionParser {
         final String CLOSE_BRACKET = ")";
         final String expression = reader.getRemainingExpression();
         if (expression.startsWith(CLOSE_BRACKET)) {
-                context.pushClosingBracket();
+            context.pushClosingBracket();
             reader.incrementParsePosition(CLOSE_BRACKET.length());
             return true;
         }

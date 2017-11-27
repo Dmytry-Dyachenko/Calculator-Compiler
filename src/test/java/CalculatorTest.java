@@ -87,9 +87,9 @@ public class CalculatorTest {
 
     @Test
     public void testWorkWithUpperCaseNamedVariables() throws CalculationException {
-        final double result = calculator.calculate("superArt=1;bestOfYard=2+superArt;superArt+bestOfYard+1;");
+        final double result = calculator.calculate("superArt = 1 ; bestOfYard = 2 + superArt ;" +
+                " superArt + bestOfYard + 1 ;");
         assertEquals(5.0, result, 0.001);
     }
-
 
 }

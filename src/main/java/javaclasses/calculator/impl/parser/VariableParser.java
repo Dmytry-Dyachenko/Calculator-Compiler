@@ -22,7 +22,7 @@ public class VariableParser implements ExpressionParser {
     public boolean parse(ExpressionReader reader, EvaluationContext context) {
         final String expression = reader.getRemainingExpression();
 
-        if (isItFunction(expression)){
+        if (isItFunction(expression)) {
             return false;
         }
 
@@ -41,8 +41,8 @@ public class VariableParser implements ExpressionParser {
 
     private boolean isItFunction(String expression) {
         final FunctionFactory factory = new FunctionFactory();
-        for (String functionName: factory.getFunctionsName()){
-            if (expression.startsWith(functionName)){
+        for (String functionName : factory.getFunctionsName()) {
+            if (expression.startsWith(functionName)) {
                 return true;
             }
         }
