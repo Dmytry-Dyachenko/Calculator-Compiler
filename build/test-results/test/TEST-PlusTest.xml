@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PlusTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-11-27T12:50:42" hostname="d-dyachenko" time="0.005">
+  <properties/>
+  <testcase name="testMultiPlusOperatorWithFloats" classname="PlusTest" time="0.001"/>
+  <testcase name="testSinglePlusOperator" classname="PlusTest" time="0.001"/>
+  <testcase name="testDoubleOperatorError" classname="PlusTest" time="0.0"/>
+  <testcase name="testMultiPlusOperatorWithIntegers" classname="PlusTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine start
+INFO: Start state: START
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: NUMBER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: State accepted: NUMBER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: VARIABLE_DELIMITER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: BINARY_OPERATOR
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: State accepted: BINARY_OPERATOR
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: NUMBER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: State accepted: NUMBER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: VARIABLE_DELIMITER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: BINARY_OPERATOR
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: State accepted: BINARY_OPERATOR
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: NUMBER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: State accepted: NUMBER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: VARIABLE_DELIMITER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: BINARY_OPERATOR
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: State accepted: BINARY_OPERATOR
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: NUMBER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: State accepted: NUMBER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: VARIABLE_DELIMITER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: BINARY_OPERATOR
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: CLOSE_BRACKET
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: DELIMITER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: FINISH
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: State accepted: FINISH
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine start
+INFO: Start state: START
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: NUMBER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: State accepted: NUMBER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: VARIABLE_DELIMITER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: BINARY_OPERATOR
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: State accepted: BINARY_OPERATOR
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: NUMBER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: State accepted: NUMBER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: VARIABLE_DELIMITER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: BINARY_OPERATOR
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: CLOSE_BRACKET
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: DELIMITER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: FINISH
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: State accepted: FINISH
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine start
+INFO: Start state: START
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: NUMBER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: State accepted: NUMBER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: VARIABLE_DELIMITER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: BINARY_OPERATOR
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: State accepted: BINARY_OPERATOR
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: NUMBER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: VARIABLE
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: OPEN_BRACKET
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: FUNCTION
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine start
+INFO: Start state: START
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: NUMBER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: State accepted: NUMBER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: VARIABLE_DELIMITER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: BINARY_OPERATOR
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: State accepted: BINARY_OPERATOR
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: NUMBER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: State accepted: NUMBER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: VARIABLE_DELIMITER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: BINARY_OPERATOR
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: State accepted: BINARY_OPERATOR
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: NUMBER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: State accepted: NUMBER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: VARIABLE_DELIMITER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: BINARY_OPERATOR
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: State accepted: BINARY_OPERATOR
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: NUMBER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: State accepted: NUMBER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: VARIABLE_DELIMITER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: BINARY_OPERATOR
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: CLOSE_BRACKET
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: DELIMITER
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: Checking possible state: FINISH
+Nov 27, 2017 2:50:42 PM javaclasses.calculator.fsm.FiniteStateMachine moveForward
+INFO: State accepted: FINISH
+]]></system-err>
+</testsuite>
